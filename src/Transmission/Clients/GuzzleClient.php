@@ -1,4 +1,7 @@
-<?php namespace Playground\Transmission\Clients;
+<?php
+
+namespace Transmission\Clients;
+
 use GuzzleHttp\Psr7\Request;
 
 /**

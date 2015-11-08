@@ -1,4 +1,6 @@
-<?php namespace Playground\Transmission\Clients;
+<?php
+
+namespace Transmission\Clients;
 
 /**
  * Class ClientAbstract

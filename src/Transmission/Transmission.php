@@ -1,7 +1,8 @@
-<?php namespace Playground\Transmission;
+<?php
 
-use Playground\Transmission\Clients\ClientAbstract;
-use Playground\Framework\Piles\Pile;
+namespace Transmission;
+
+use Transmission\Clients\ClientAbstract;
 
 
 /**
@@ -67,35 +68,32 @@ class Transmission
     }
 
     /**
-     * @param bool|false $sort
      * @param bool|false $getAllFields
-     * @return Pile
+     * @return array
      */
-    public function getAll($sort=false, $getAllFields=false)
+    public function getAll($getAllFields=false)
     {
-        return $this->get([], $sort, $getAllFields);
+        return $this->get([], $getAllFields);
     }
 
     /**
      * @param array $torrentList
-     * @param bool|false $sort
      * @param bool|false $allFields
-     * @return Pile
+     * @return array
      */
-    public function get(array $torrentList = [], $sort=false, $allFields=false)
+    public function get(array $torrentList = [], $allFields=false)
     {
         ($allFields) ? $fields = Transmission::allFields() : $fields = Transmission::$basicFields;
 
         $jsonData = $this->generateGetJson($torrentList, $fields);
 
-        $torrents = new Pile(json_decode(
+        $torrents = json_decode(
             $this->client->request(
                 "POST",
                 $jsonData
-            ),true)['arguments']['torrents']);
+            )['arguments']['torrents']);
 
         $torrents = $this->calculateCompletion($torrents);
-        $torrents->sort($sort);
 
         return $torrents;
     }
@@ -130,11 +128,11 @@ class Transmission
     /**
      * Calculates the completion percentages for the returned torrents
      *
-     * @param Pile $torrents
+     * @param array $torrents
      *
-     * @return Pile
+     * @return array
      */
-    private function calculateCompletion(Pile $torrents)
+    private function calculateCompletion(array $torrents)
     {
         foreach ($torrents as $torrent) {
             $totalLength = 0;
