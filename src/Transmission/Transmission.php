@@ -24,40 +24,6 @@ class Transmission
      */
     private $client;
 
-
-    /**
-     * Allowed actions
-     * Not implemented here are the Session actions, these to me should be in a TransmissionSession class
-     *
-     * @var array
-     */
-    public static $actions = [
-        //ACTION REQUESTS
-        "torrent-start",        // requires a $torrent_ids array or single id int
-        "torrent-start-now",    // requires a $torrent_ids array or single id int
-        "torrent-stop",         // requires a $torrent_ids array or single id int
-        "torrent-verify",       // requires a $torrent_ids array or single id int
-        "torrent-reannounce",    // requires a $torrent_ids array or single id int
-
-        //MUTATORS
-        "torrent-set",          // Arguments are in Transmission::$mutatorFields
-
-        //ACCESSORS
-        "torrent-get",          // Arguments are in Transmission::$basicGetFields and $extraGetFeidls
-
-        //ADD TORRENT
-        "torrent-add",
-
-        //REMOVE TORRENT
-        "torrent-remove",
-
-        //MOVE TORRENT
-        "torrent-set-location",
-
-        //RENAME PATH
-        "torrent-rename-path"
-    ];
-
     /**
      * @var array
      */
@@ -120,7 +86,56 @@ class Transmission
         "uploadLimited",       // boolean    true if "uploadLimit" is honored
     ];
 
+    /**
+     * Used for "torrent-add" command
+     *
+     * Either "filename" OR "metainfo" MUST be included.
+     * All other arguments are optional.
+     *
+     * @var array
+     */
+    public static $addFields = [
+        "cookies" => '',            // string      pointer to a string of one or more cookies.
+        "download-dir" => '',       // string      path to download the torrent to
+        "filename" => '',           // string      filename or URL of the .torrent file
+        "metainfo" => '',           // string      base64-encoded .torrent content
+        "paused" => false,          // boolean     if true, don't start the torrent
+        "peer-limit" => 0,          // number      maximum number of peers
+        "bandwidthPriority" => 1,   // number      torrent's bandwidth tr_priority_t
+        "files-wanted" => [],       // array       indices of file(s) to download
+        "files-unwanted" => [],     // array       indices of file(s) to not download
+        "priority-high",            // array       indices of high-priority file(s)
+        "priority-low",             // array       indices of low-priority file(s)
+        "priority-normal",          // array       indices of normal-priority file(s)
+    ];
 
+    /**
+     * Used in "torrent-delete"
+     *
+     * @var array
+     */
+    public static $deleteFields = [
+        "ids" => [],                  // array      torrent list of ids
+        "delete-local-data" => false, // boolean    delete local data. (default: false)
+    ];
+
+    /**
+     * @var array
+     */
+    public static $moveFields = [
+        "ids" => [],             // array      torrent list
+        "location" => '',        // string     the new torrent location
+        "move" => false,         // boolean    if true, move from previous location.
+                                 //            otherwise, search "location" for files
+                                 //            (default: false)
+    ];
+
+    /**
+     * @var array
+     */
+    public static $renameFields = [
+
+    ];
 
     /**
      * @param ClientAbstract $client
@@ -130,16 +145,78 @@ class Transmission
         $this->client = $client;
     }
 
+    function torrentStart($ids = [])
+    {
+    }
+
+    function torrentStartNow($ids = [])
+    {
+    }
+
+    function torrentStop($ids = [])
+    {
+    }
+
+    function torrentVerify($ids = [])
+    {
+    }
+
+    function torrentReannounce($ids = [])
+    {
+    }
+
+    function torrentSet($parameters = [])
+    {
+    }
+
     /**
+     * @param bool|false $allFields
+     * @param array $ids
+     * @param array $chosenFields
+     *
+     * @return mixed
+     */
+    function torrentGet($allFields = false, array $ids = [], array $chosenFields = [])
+    {
+        $payload = [
+
+        ];
+
+        if (count($chosenFields) == 0)
+            $payload['fields'] = ($allFields) ? Transmission::allGetFields() : Transmission::$basicGetFields;
+        else
+            $payload['fields'] = $chosenFields;
+
+        if (count($ids) == 0)
+            $payload['ids'] = $ids;
+        else
+            $payload['ids'] = $ids;
+        return $this->client->request("torrent-get", $payload);
+    }
+
+    function torrentAdd()
+    {
+    }
+
+    function torrentRemove()
+    {
+    }
+
+    function torrentSetLocation()
+    {
+    }
+
+    function torrentRenamePath()
+    {
+    }
+
+    /**
+     * Returns the complete lists of fields for the get command
+     *
      * @return array
      */
     public static function allGetFields()
     {
         return array_merge(Transmission::$basicGetFields, Transmission::$extraGetFields);
-    }
-
-    public function __call($name, $arguments)
-    {
-
     }
 }
