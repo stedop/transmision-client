@@ -20,11 +20,10 @@ abstract class ClientAbstract {
     public $XTransmissionSessionId;
 
     /**
-     * @param $method
      * @param array $params
      * @return mixed
      */
-    abstract public function request($method, array $params);
+    abstract public function request(array $params);
 
     /**
      * @return mixed

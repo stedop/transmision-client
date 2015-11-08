@@ -33,16 +33,19 @@ class GuzzleClient extends ClientAbstract
         $this->setVendorClient(new \GuzzleHttp\Client($options));
     }
 
-
-    public function request($method, array $params)
+    /**
+     * Sends a request with the client
+     * @param array $params
+     *
+     * @return string
+     */
+    public function request(array $params)
     {
         $headers = [];
         if ($this->getXTransmissionSessionId() != "")
-            $headers = [
-                "X-Transmission-Session-Id" =>
-                $this->getXTransmissionSessionId()
-            ];
-        $request = new Request($method, "", $headers, json_encode($params));
+            $headers = $this->formatSessionHeader();
+
+        $request = new Request("POST", "", $headers, json_encode($params));
         // GET THE Transmission SESSION ID and set it for the client
         try {
             return $this->client->send($request)->getBody()->getContents();
@@ -52,8 +55,13 @@ class GuzzleClient extends ClientAbstract
                 $response->getHeader("X-Transmission-Session-Id")
             );
 
-            $request = new Request($method, "", ["X-Transmission-Session-Id" => $this->getXTransmissionSessionId()], json_encode($params));
+            $request = new Request("POST", "", $this->formatSessionHeader(), json_encode($params));
             return $this->client->send($request)->getBody()->getContents();
         }
+    }
+
+    public function formatSessionHeader()
+    {
+        return ["X-Transmission-Session-Id" => $this->getXTransmissionSessionId()];
     }
 }

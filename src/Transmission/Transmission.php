@@ -191,7 +191,7 @@ class Transmission
         if (count($ids) != 0)
             $payload["arguments"]['ids'] = $ids;
 
-        return $this->client->request("torrent-get", $payload);
+        return $this->client->request("POST", $payload);
     }
 
     function torrentAdd()
