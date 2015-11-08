@@ -27,10 +27,5 @@
             "Transmission\\": "src/Transmission",
             "Transmission\\Tests\\": "tests/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-alpha"
-        }
     }
 }
