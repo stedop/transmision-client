@@ -179,18 +179,18 @@ class Transmission
     function torrentGet($allFields = false, array $ids = [], array $chosenFields = [])
     {
         $payload = [
-
+            "method" => "torrent-get",
+            "arguments" => []
         ];
 
         if (count($chosenFields) == 0)
-            $payload['fields'] = ($allFields) ? Transmission::allGetFields() : Transmission::$basicGetFields;
+            $payload["arguments"]['fields'] = ($allFields) ? Transmission::allGetFields() : Transmission::$basicGetFields;
         else
-            $payload['fields'] = $chosenFields;
+            $payload["arguments"]['fields'] = $chosenFields;
 
-        if (count($ids) == 0)
-            $payload['ids'] = $ids;
-        else
-            $payload['ids'] = $ids;
+        if (count($ids) != 0)
+            $payload["arguments"]['ids'] = $ids;
+
         return $this->client->request("torrent-get", $payload);
     }
 
