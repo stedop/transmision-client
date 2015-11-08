@@ -24,10 +24,51 @@ class Transmission
      */
     private $client;
 
+
+    /**
+     * Allowed actions
+     * Not implemented here are the Session actions, these to me should be in a TransmissionSession class
+     *
+     * @var array
+     */
+    public static $actions = [
+        //ACTION REQUESTS
+        "torrent-start",        // requires a $torrent_ids array or single id int
+        "torrent-start-now",    // requires a $torrent_ids array or single id int
+        "torrent-stop",         // requires a $torrent_ids array or single id int
+        "torrent-verify",       // requires a $torrent_ids array or single id int
+        "torrent-reannounce",    // requires a $torrent_ids array or single id int
+
+        //MUTATORS
+        "torrent-set",          // Arguments are in Transmission::$mutatorFields
+
+        //ACCESSORS
+        "torrent-get",          // Arguments are in Transmission::$basicGetFields and $extraGetFeidls
+
+        //ADD TORRENT
+        "torrent-add",
+
+        //REMOVE TORRENT
+        "torrent-remove",
+
+        //MOVE TORRENT
+        "torrent-set-location",
+
+        //RENAME PATH
+        "torrent-rename-path"
+    ];
+
     /**
      * @var array
      */
-    public static $fields = array(
+    public static $basicGetFields = array(
+        'id', 'name', 'addedDate', 'dateCreated', 'files', 'isFinished'
+    );
+
+    /**
+     * @var array
+     */
+    public static $extraGetFields = [
         'bandwidthPriority', 'comment', 'corruptEver',
         'creator', 'desiredAvailable', 'doneDate', 'downloadDir',
         'downloadedEver', 'downloadLimit', 'downloadLimited', 'error', 'errorString',
@@ -42,14 +83,44 @@ class Transmission
         'sizeWhenDone', 'startDate', 'status', 'trackers', 'trackerStats',
         'totalSize', 'torrentFile', 'uploadedEver', 'uploadLimit', 'uploadLimited',
         'uploadRatio', 'wanted', 'webseeds', 'webseedsSendingToUs'
-    );
+    ];
+
 
     /**
+     * Used for the torent-set command
+     *
+     * Just as an empty "ids" value is shorthand for "all ids", using an empty array
+     * for "files-wanted", "files-unwanted", "priority-high", "priority-low", or
+     * "priority-normal" is shorthand for saying "all files".
+     *
      * @var array
      */
-    public static $basicFields = array(
-        'id', 'name', 'addedDate', 'dateCreated', 'files', 'isFinished'
-    );
+    public static $mutatorFields = [
+        "bandwidthPriority",   // number     this torrent's bandwidth tr_priority_t
+        "downloadLimit",       // number     maximum download speed (KBps)
+        "downloadLimited",     // boolean    true if "downloadLimit" is honored
+        "files-wanted",        // array      indices of file(s) to download
+        "files-unwanted",      // array      indices of file(s) to not download
+        "honorsSessionLimits", // boolean    true if session upload limits are honored
+        "ids" ,                // array      torrent list, as described in 3.1
+        "location",            // string     new location of the torrent's content
+        "peer-limit",          // number     maximum number of peers
+        "priority-high",       // array      indices of high-priority file(s)
+        "priority-low",        // array      indices of low-priority file(s)
+        "priority-normal",     // array      indices of normal-priority file(s)
+        "queuePosition",       // number     position of this torrent in its queue [0...n)
+        "seedIdleLimit",       // number     torrent-level number of minutes of seeding inactivity
+        "seedIdleMode",        // number     which seeding inactivity to use.  See tr_idlelimit
+        "seedRatioLimit",      // double     torrent-level seeding ratio
+        "seedRatioMode",       // number     which ratio to use.  See tr_ratiolimit
+        "trackerAdd",          // array      strings of announce URLs to add
+        "trackerRemove",       // array      ids of trackers to remove
+        "trackerReplace",      // array      pairs of <trackerId/new announce URLs>
+        "uploadLimit",         // number     maximum upload speed (KBps)
+        "uploadLimited",       // boolean    true if "uploadLimit" is honored
+    ];
+
+
 
     /**
      * @param ClientAbstract $client
@@ -62,105 +133,13 @@ class Transmission
     /**
      * @return array
      */
-    public static function allFields()
+    public static function allGetFields()
     {
-        return array_merge(self::$basicFields, self::$fields);
+        return array_merge(Transmission::$basicGetFields, Transmission::$extraGetFields);
     }
 
-    /**
-     * @param bool|false $getAllFields
-     * @return array
-     */
-    public function getAll($getAllFields=false)
+    public function __call($name, $arguments)
     {
-        return $this->get([], $getAllFields);
-    }
-
-    /**
-     * @param array $torrentList
-     * @param bool|false $allFields
-     * @return array
-     */
-    public function get(array $torrentList = [], $allFields=false)
-    {
-        ($allFields) ? $fields = Transmission::allFields() : $fields = Transmission::$basicFields;
-
-        $jsonData = $this->generateGetJson($torrentList, $fields);
-
-        $torrents = json_decode(
-            $this->client->request(
-                "POST",
-                $jsonData
-            )['arguments']['torrents']);
-
-        $torrents = $this->calculateCompletion($torrents);
-
-        return $torrents;
-    }
-
-    /**
-     * Generate the json payload for the get function
-     *
-     * @param array $torrentList
-     * @param array $fields
-     *
-     * @return array
-     */
-    public function generateGetJson(array $torrentList = [], array $fields = [])
-    {
-        $jsonData = [
-            'method' => 'torrent-get',
-            'arguments'=> [
-                'fields' => $fields
-            ]
-        ];
-
-        if (count($torrentList) > 0) {
-            if (count($torrentList) == 1)
-                $jsonData['arguments']['ids'] = (int) $torrentList[0];
-            else
-                $jsonData['arguments']['ids'] = $torrentList;
-        }
-
-        return $jsonData;
-    }
-
-    /**
-     * Calculates the completion percentages for the returned torrents
-     *
-     * @param array $torrents
-     *
-     * @return array
-     */
-    private function calculateCompletion(array $torrents)
-    {
-        foreach ($torrents as $torrent) {
-            $totalLength = 0;
-            $totalCompleted = 0;
-
-            foreach ($torrent->files as $file) {
-                $totalLength = $totalLength + $file->length;
-                $totalCompleted = $totalCompleted + $file->bytesCompleted;
-            }
-
-            $torrent['completedPercentage'] = round(($totalCompleted/$totalLength) * 100, 2);
-        }
-
-        return $torrents;
-    }
-
-    /**
-     * @param $magnet_uri
-     * @param string $download_location
-     */
-    public function add($magnet_uri, $download_location = "") {
-
-    }
-
-    /**
-     * @param $torrent_id
-     */
-    public function remove($torrent_id) {
 
     }
 }
