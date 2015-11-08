@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Transmission\\": "src/Transmission"
+            "Transmission\\": "src/Transmission/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Transmission\\": "src/Transmission",
+            "Transmission\\": "src/Transmission/",
             "Transmission\\Tests\\": "tests/"
         }
     }
