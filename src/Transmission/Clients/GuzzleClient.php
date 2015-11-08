@@ -3,6 +3,8 @@
 namespace Transmission\Clients;
 
 use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
 
 /**
  * Class GuzzleClient
@@ -30,7 +32,7 @@ class GuzzleClient extends ClientAbstract
             $this->setTransmissionURL($host);
 
         $options['base_uri'] = $this->getTransmissionURL();
-        $this->setVendorClient(new \GuzzleHttp\Client($options));
+        $this->setVendorClient(new Client($options));
     }
 
     /**
@@ -49,7 +51,7 @@ class GuzzleClient extends ClientAbstract
         // GET THE Transmission SESSION ID and set it for the client
         try {
             return $this->client->send($request)->getBody()->getContents();
-        } catch (\GuzzleHttp\Exception\ClientException $e) {
+        } catch (ClientException $e) {
             $response = $e->getResponse();
             $this->setXTransmissionSessionId(
                 $response->getHeader("X-Transmission-Session-Id")
