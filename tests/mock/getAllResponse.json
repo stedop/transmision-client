@@ -42,18 +42,6 @@
             "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/gotham.206.hdtv-lol[ettv].mp4"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 168,
-            "length": 168,
-            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
-          },
-          {
-            "bytesCompleted": 302962032,
-            "length": 302962032,
-            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/gotham.206.hdtv-lol[ettv].mp4"
-          }
-        ],
         "hashString": "daa109d45284c92040ad6fdeaf4e48a12f9ff7d2",
         "haveUnchecked": 0,
         "haveValid": 302962200,
@@ -110,7 +98,7 @@
             "announceState": 0,
             "downloadCount": -1,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://tracker.publicbt.com:80",
             "id": 0,
             "isBackup": false,
@@ -120,16 +108,16 @@
             "lastAnnounceSucceeded": false,
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
-            "lastScrapeResult": "",
-            "lastScrapeStartTime": 1447078151,
+            "lastScrapeResult": "Connection failed",
+            "lastScrapeStartTime": 0,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeTime": 1447078303,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 0,
+            "nextScrapeTime": 1447078620,
             "scrape": "udp://tracker.publicbt.com:80/scrape",
-            "scrapeState": 3,
+            "scrapeState": 1,
             "seederCount": -1,
             "tier": 0
           },
@@ -248,28 +236,6 @@
             "name": "400.Days.2015.BRRip.XviD.AC3-EVO/sample.avi"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 1477007244,
-            "length": 1477007244,
-            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.avi"
-          },
-          {
-            "bytesCompleted": 2196,
-            "length": 2196,
-            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.nfo"
-          },
-          {
-            "bytesCompleted": 338,
-            "length": 338,
-            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/Torrent Downloaded From ExtraTorrent.cc.txt"
-          },
-          {
-            "bytesCompleted": 14776320,
-            "length": 14776320,
-            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/sample.avi"
-          }
-        ],
         "hashString": "c1df23e24dc29b2bfc4775c5f7d33e8bdf31410e",
         "haveUnchecked": 0,
         "haveValid": 1491786098,
@@ -328,7 +294,7 @@
             "announceState": 0,
             "downloadCount": -1,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://tracker.publicbt.com:80",
             "id": 0,
             "isBackup": false,
@@ -338,14 +304,14 @@
             "lastAnnounceSucceeded": false,
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
-            "lastScrapeResult": "",
+            "lastScrapeResult": "Connection failed",
             "lastScrapeStartTime": 0,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeTime": 1447078303,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 1447078190,
+            "nextScrapeTime": 1447078610,
             "scrape": "udp://tracker.publicbt.com:80/scrape",
             "scrapeState": 1,
             "seederCount": -1,
@@ -354,9 +320,9 @@
           {
             "announce": "udp://open.demonii.com:1337",
             "announceState": 0,
-            "downloadCount": -1,
+            "downloadCount": 58544,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://open.demonii.com:1337",
             "id": 1,
             "isBackup": false,
@@ -367,16 +333,16 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "",
-            "lastScrapeStartTime": 0,
-            "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeStartTime": 1447078230,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078230,
             "lastScrapeTimedOut": 0,
-            "leecherCount": -1,
+            "leecherCount": 513,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 1447078230,
+            "nextScrapeTime": 1447080030,
             "scrape": "udp://open.demonii.com:1337",
             "scrapeState": 1,
-            "seederCount": -1,
+            "seederCount": 1858,
             "tier": 1
           }
         ],
@@ -439,23 +405,6 @@
             "bytesCompleted": 341,
             "priority": 0,
             "wanted": true
-          }
-        ],
-        "files": [
-          {
-            "bytesCompleted": 964363223,
-            "length": 964363223,
-            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Ant.Man.2015.720p.HDRip.x264.AAC-ETRG.mp4"
-          },
-          {
-            "bytesCompleted": 128841,
-            "length": 128841,
-            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/English.srt"
-          },
-          {
-            "bytesCompleted": 341,
-            "length": 341,
-            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Torrent Downloaded From ExtraTorrent.cc.txt"
           }
         ],
         "files": [
@@ -543,9 +492,9 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "Connection failed",
-            "lastScrapeStartTime": 1447078170,
+            "lastScrapeStartTime": 1447078530,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 1447078141,
+            "lastScrapeTime": 1447078213,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
@@ -661,23 +610,6 @@
             "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/brooklyn.nine-nine.s03e06.hdtv.x264-fleet.nfo"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 182151418,
-            "length": 182151418,
-            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET.mp4"
-          },
-          {
-            "bytesCompleted": 34,
-            "length": 34,
-            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/RARBG.com.txt"
-          },
-          {
-            "bytesCompleted": 696,
-            "length": 696,
-            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/brooklyn.nine-nine.s03e06.hdtv.x264-fleet.nfo"
-          }
-        ],
         "hashString": "ebbad2f49f53d95bc7c04d67a6c143b0637722f2",
         "haveUnchecked": 0,
         "haveValid": 182152148,
@@ -746,9 +678,9 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "Connection failed",
-            "lastScrapeStartTime": 1447078170,
+            "lastScrapeStartTime": 1447078560,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 1447078141,
+            "lastScrapeTime": 1447078213,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
@@ -964,73 +896,6 @@
             "name": "Constantine Season 1 Complete/Constantine.S01E13.HDTV.x264-LOL-sync.mp4"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 276002304,
-            "length": 276002304,
-            "name": "Constantine Season 1 Complete/Constantine.S01E01.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 255602584,
-            "length": 255602584,
-            "name": "Constantine Season 1 Complete/Constantine.S01E02.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 233402430,
-            "length": 233402430,
-            "name": "Constantine Season 1 Complete/Constantine.S01E03.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 254598673,
-            "length": 254598673,
-            "name": "Constantine Season 1 Complete/Constantine.S01E04.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 290628857,
-            "length": 290628857,
-            "name": "Constantine Season 1 Complete/Constantine.S01E05.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 247169118,
-            "length": 247169118,
-            "name": "Constantine Season 1 Complete/Constantine.S01E06.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 269921405,
-            "length": 269921405,
-            "name": "Constantine Season 1 Complete/Constantine.S01E07.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 222112889,
-            "length": 222112889,
-            "name": "Constantine Season 1 Complete/Constantine.S01E08.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 249415313,
-            "length": 249415313,
-            "name": "Constantine Season 1 Complete/Constantine.S01E09.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 233551383,
-            "length": 233551383,
-            "name": "Constantine Season 1 Complete/Constantine.S01E10.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 235469604,
-            "length": 235469604,
-            "name": "Constantine Season 1 Complete/Constantine.S01E11.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 234233104,
-            "length": 234233104,
-            "name": "Constantine Season 1 Complete/Constantine.S01E12.HDTV.x264-LOL.mp4"
-          },
-          {
-            "bytesCompleted": 346613810,
-            "length": 346613810,
-            "name": "Constantine Season 1 Complete/Constantine.S01E13.HDTV.x264-LOL-sync.mp4"
-          }
-        ],
         "hashString": "a6f5dbdf688083993fc066b889f7c7d718a3c4d5",
         "haveUnchecked": 0,
         "haveValid": 3348721474,
@@ -1098,7 +963,7 @@
             "announceState": 0,
             "downloadCount": -1,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://tracker.publicbt.com:80",
             "id": 0,
             "isBackup": false,
@@ -1108,14 +973,14 @@
             "lastAnnounceSucceeded": false,
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
-            "lastScrapeResult": "",
+            "lastScrapeResult": "Connection failed",
             "lastScrapeStartTime": 0,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeTime": 1447078303,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 1447078190,
+            "nextScrapeTime": 1447078640,
             "scrape": "udp://tracker.publicbt.com/scrape",
             "scrapeState": 1,
             "seederCount": -1,
@@ -1227,18 +1092,6 @@
             "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/agent.x.us.102.hdtv-lol[ettv].mp4"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 168,
-            "length": 168,
-            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
-          },
-          {
-            "bytesCompleted": 301790332,
-            "length": 301790332,
-            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/agent.x.us.102.hdtv-lol[ettv].mp4"
-          }
-        ],
         "hashString": "4b5a242d71d844d11fb32b60c2c10cb2bf323565",
         "haveUnchecked": 0,
         "haveValid": 301790500,
@@ -1295,7 +1148,7 @@
             "announceState": 0,
             "downloadCount": -1,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://tracker.publicbt.com:80",
             "id": 0,
             "isBackup": false,
@@ -1305,25 +1158,25 @@
             "lastAnnounceSucceeded": false,
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
-            "lastScrapeResult": "",
-            "lastScrapeStartTime": 1447078151,
+            "lastScrapeResult": "Connection failed",
+            "lastScrapeStartTime": 0,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeTime": 1447078303,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 0,
+            "nextScrapeTime": 1447078620,
             "scrape": "udp://tracker.publicbt.com/scrape",
-            "scrapeState": 3,
+            "scrapeState": 1,
             "seederCount": -1,
             "tier": 0
           },
           {
             "announce": "udp://open.demonii.com:1337",
             "announceState": 0,
-            "downloadCount": -1,
+            "downloadCount": 9374,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://open.demonii.com:1337",
             "id": 1,
             "isBackup": false,
@@ -1334,16 +1187,16 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "",
-            "lastScrapeStartTime": 0,
-            "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeStartTime": 1447078230,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078230,
             "lastScrapeTimedOut": 0,
-            "leecherCount": -1,
+            "leecherCount": 905,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 1447078230,
+            "nextScrapeTime": 1447080030,
             "scrape": "udp://open.demonii.com:1337",
             "scrapeState": 1,
-            "seederCount": -1,
+            "seederCount": 1988,
             "tier": 1
           }
         ],
@@ -1533,78 +1386,6 @@
             "name": "Con Man Season 1 Web-Dl By Gers1690/66798_310x459.jpg"
           }
         ],
-        "files": [
-          {
-            "bytesCompleted": 327800446,
-            "length": 327800446,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep10 Thank You For Your ServiceThank You For Your Service.mp4"
-          },
-          {
-            "bytesCompleted": 320537638,
-            "length": 320537638,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep13 Too Much Closure For Comfort.mp4"
-          },
-          {
-            "bytesCompleted": 266077902,
-            "length": 266077902,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep11 Full Release.mp4"
-          },
-          {
-            "bytesCompleted": 264237395,
-            "length": 264237395,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep4 Retarding It All Up.mp4"
-          },
-          {
-            "bytesCompleted": 242728831,
-            "length": 242728831,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep7 Doll Faced.mp4"
-          },
-          {
-            "bytesCompleted": 238859289,
-            "length": 238859289,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep6 A Fluid Thing.mp4"
-          },
-          {
-            "bytesCompleted": 221501661,
-            "length": 221501661,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep2 Cash Poor.mp4"
-          },
-          {
-            "bytesCompleted": 217395950,
-            "length": 217395950,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep3 Behind The Lines.mp4"
-          },
-          {
-            "bytesCompleted": 213682920,
-            "length": 213682920,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep5 Baby Boom.mp4"
-          },
-          {
-            "bytesCompleted": 210159489,
-            "length": 210159489,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep 8 Voiced Over.mp4"
-          },
-          {
-            "bytesCompleted": 203311929,
-            "length": 203311929,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep1 Stalled.mp4"
-          },
-          {
-            "bytesCompleted": 199787357,
-            "length": 199787357,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep12 Found And Lost.mp4"
-          },
-          {
-            "bytesCompleted": 186315573,
-            "length": 186315573,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep9 Sinking Feelings.mp4"
-          },
-          {
-            "bytesCompleted": 33901,
-            "length": 33901,
-            "name": "Con Man Season 1 Web-Dl By Gers1690/66798_310x459.jpg"
-          }
-        ],
         "hashString": "2556825fd596a1727e8eca7d00b76bd05a864f4e",
         "haveUnchecked": 0,
         "haveValid": 3112430281,
@@ -1684,9 +1465,9 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "Connection failed",
-            "lastScrapeStartTime": 1447078170,
+            "lastScrapeStartTime": 1447078560,
             "lastScrapeSucceeded": false,
-            "lastScrapeTime": 1447078141,
+            "lastScrapeTime": 1447078213,
             "lastScrapeTimedOut": 0,
             "leecherCount": -1,
             "nextAnnounceTime": 0,
@@ -1699,9 +1480,9 @@
           {
             "announce": "udp://open.demonii.com:1337",
             "announceState": 0,
-            "downloadCount": -1,
+            "downloadCount": 1450,
             "hasAnnounced": false,
-            "hasScraped": false,
+            "hasScraped": true,
             "host": "udp://open.demonii.com:1337",
             "id": 1,
             "isBackup": false,
@@ -1712,16 +1493,16 @@
             "lastAnnounceTime": 0,
             "lastAnnounceTimedOut": false,
             "lastScrapeResult": "",
-            "lastScrapeStartTime": 0,
-            "lastScrapeSucceeded": false,
-            "lastScrapeTime": 0,
+            "lastScrapeStartTime": 1447078230,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078230,
             "lastScrapeTimedOut": 0,
-            "leecherCount": -1,
+            "leecherCount": 4,
             "nextAnnounceTime": 0,
-            "nextScrapeTime": 1447078230,
+            "nextScrapeTime": 1447080030,
             "scrape": "udp://open.demonii.com:1337",
             "scrapeState": 1,
-            "seederCount": -1,
+            "seederCount": 35,
             "tier": 1
           }
         ],
@@ -1789,18 +1570,6 @@
             "bytesCompleted": 251988797,
             "priority": 0,
             "wanted": true
-          }
-        ],
-        "files": [
-          {
-            "bytesCompleted": 168,
-            "length": 168,
-            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
-          },
-          {
-            "bytesCompleted": 251988797,
-            "length": 251988797,
-            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/gotham.207.hdtv-lol[ettv].mp4"
           }
         ],
         "files": [

@@ -62,52 +62,11 @@ class Transmission
     ];
 
     protected $allowedActions = [
-        "torrentStart" => "torrent-start",              // tr_torrentStart
-        "torrentStartNow" => "torrent-start-now",       // tr_torrentStartNow
-        "torrentStop" => "torrent-stop",                // tr_torrentStop
-        "torrentVerify" => "torrent-verify",            // tr_torrentVerify
-        "torrentReannounce" => "torrent-reannounce"     // tr_torrentManualUpdate ("ask tracker for more peers")
-    ];
-
-    /**
-     * Used for the torent-set command
-     *
-     * Just as an empty "ids" value is shorthand for "all ids", using an empty array
-     * for "files-wanted", "files-unwanted", "priority-high", "priority-low", or
-     * "priority-normal" is shorthand for saying "all files".
-     *
-     * @var array
-     */
-    public static $mutatorFields = [
-        "bandwidthPriority",   // number     this torrent's bandwidth tr_priority_t
-        "downloadLimit",       // number     maximum download speed (KBps)
-        "downloadLimited",     // boolean    true if "downloadLimit" is honored
-        "files-wanted",        // array      indices of file(s) to download
-        "files-unwanted",      // array      indices of file(s) to not download
-        "honorsSessionLimits", // boolean    true if session upload limits are honored
-        "ids" ,                // array      torrent list, as described in 3.1
-        "location",            // string     new location of the torrent's content
-        "peer-limit",          // number     maximum number of peers
-        "priority-high",       // array      indices of high-priority file(s)
-        "priority-low",        // array      indices of low-priority file(s)
-        "priority-normal",     // array      indices of normal-priority file(s)
-        "queuePosition",       // number     position of this torrent in its queue [0...n)
-        "seedIdleLimit",       // number     torrent-level number of minutes of seeding inactivity
-        "seedIdleMode",        // number     which seeding inactivity to use.  See tr_idlelimit
-        "seedRatioLimit",      // double     torrent-level seeding ratio
-        "seedRatioMode",       // number     which ratio to use.  See tr_ratiolimit
-        "trackerAdd",          // array      strings of announce URLs to add
-        "trackerRemove",       // array      ids of trackers to remove
-        "trackerReplace",      // array      pairs of <trackerId/new announce URLs>
-        "uploadLimit",         // number     maximum upload speed (KBps)
-        "uploadLimited",       // boolean    true if "uploadLimit" is honored
-    ];
-
-    /**
-     * @var array
-     */
-    public static $renameFields = [
-
+        "torrentStart" => "torrent-start",
+        "torrentStartNow" => "torrent-start-now",
+        "torrentStop" => "torrent-stop",
+        "torrentVerify" => "torrent-verify",
+        "torrentReannounce" => "torrent-reannounce"
     ];
 
     /**
@@ -123,6 +82,8 @@ class Transmission
      *
      * @param $action
      * @param array $ids
+     *
+     * @return mixed
      */
     public function torrentAction($action, array $ids)
     {
@@ -133,12 +94,20 @@ class Transmission
 
         $payload["arguments"]["ids"] = $ids;
 
-        $this->client->request($payload);
+        return $this->client->request($payload);
     }
 
-    function torrentSet($parameters = [])
+    function torrentSet(array $ids, array $parameters = [])
     {
-        //todo: implement torrentSet
+        $payload = [
+            "method" => "torrent-set",
+            "arguments" => [
+
+            ]
+        ];
+        array_merge($payload["arguments"], $ids, $parameters);
+
+        return $this->client->request($payload);
     }
 
     /**
@@ -220,16 +189,57 @@ class Transmission
         return $this->client->request($payload);
     }
 
-    function torrentSetLocation()
+    /**
+     * Sets the location of a torrent, if move is true it will move the file otherwise it will look in the new location
+     * for existing files
+     *
+     * @param array $ids
+     * @param string $newLocation
+     * @param bool|false $move
+     *
+     * @return mixed
+     */
+    function torrentSetLocation(array $ids, $newLocation, $move = false)
     {
-        //todo implement torrentSetLocation()
+        $payload = [
+            "method" => "torrent-remove",
+            "arguments" => [
+                "ids" => $ids,
+                "location" => $newLocation,
+                "move" => $move
+            ]
+        ];
+
+        return $this->client->request($payload);
     }
 
-    function torrentRenamePath()
+    /**
+     * @param array $ids
+     * @param string $path
+     * @param string $name
+     *
+     * @return mixed
+     */
+    function torrentRenamePath(array $ids, $path, $name)
     {
-        //todo implement torrentRenamePath
+        $payload = [
+            "method" => "torrent-remove",
+            "arguments" => [
+                "ids" => $ids,
+                "path" => $path,
+                "name" => $name
+            ]
+        ];
+
+        return $this->client->request($payload);
     }
 
+    /**
+     * @param $name
+     * @param $arguments
+     *
+     * @throws TransmissionException
+     */
     public function __call($name, $arguments)
     {
         if (array_key_exists($name, $this->allowedActions)) {

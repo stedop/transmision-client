@@ -16,23 +16,30 @@ class TransmissionTest extends \PHPUnit_Framework_TestCase
     public $transmission;
 
     /**
+     * @var Transmission
+     */
+    public $mockTransmission;
+    /**
      * Creates instance of Transmission object
      */
     function setUp()
     {
-
         $this->transmission = new Transmission(new GuzzleClient());
+
+        $this->mockTransmision = new Transmission(new GuzzleClient());
     }
 
-    function testGet()
-    {
-        $this->transmission->torrentGet();
-    }
+
 
     function testFail()
     {
         $this->setExpectedException('GuzzleHttp\Exception\ConnectException','cURL error 7: Failed to connect to localhost port 9091: Connection refused (see http://curl.haxx.se/libcurl/c/libcurl-errors.html');
-        $this->transmission->allGetFields();
+        $this->transmission->torrentGet(true);
+    }
+
+    function testGet()
+    {
+        $this->mockTransmission->torrentGet();
     }
 
     /**
