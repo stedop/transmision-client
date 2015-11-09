@@ -48,7 +48,7 @@ class Transmission
         'bandwidthPriority', 'comment', 'corruptEver',
         'creator', 'desiredAvailable', 'doneDate', 'downloadDir',
         'downloadedEver', 'downloadLimit', 'downloadLimited', 'error', 'errorString',
-        'eta', 'etaIdle', 'files', 'fileStats', 'hashString', 'haveUnchecked', 'haveValid',
+        'eta', 'etaIdle', 'fileStats', 'hashString', 'haveUnchecked', 'haveValid',
         'honorsSessionLimits', 'isPrivate', 'isStalled',
         'leftUntilDone', 'magnetLink', 'manualAnnounceTime', 'maxConnectedPeers',
         'metadataPercentComplete', 'peer', 'peers', 'peersConnected',

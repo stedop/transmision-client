@@ -1,0 +1,1954 @@
+{
+  "arguments": {
+    "torrents": [
+      {
+        "addedDate": 1445944118,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1445946519,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 305833297,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 168,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 302962032,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 302962032,
+            "length": 302962032,
+            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/gotham.206.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 302962032,
+            "length": 302962032,
+            "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]/gotham.206.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "hashString": "daa109d45284c92040ad6fdeaf4e48a12f9ff7d2",
+        "haveUnchecked": 0,
+        "haveValid": 302962200,
+        "honorsSessionLimits": true,
+        "id": 1,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:daa109d45284c92040ad6fdeaf4e48a12f9ff7d2&dn=Gotham.S02E06.HDTV.x264-LOL%5Bettv%5D&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Gotham.S02E06.HDTV.x264-LOL[ettv]",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 145,
+        "pieceSize": 2097152,
+        "pieces": "////////////////////////gA==",
+        "priorities": [
+          0,
+          0
+        ],
+        "queuePosition": 0,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 1814,
+        "secondsSeeding": 17,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 302962200,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Gotham.S02E06.HDTV.x264-LOL[ettv].daa109d45284c920.torrent",
+        "totalSize": 302962200,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com:80/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078151,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 0,
+            "scrape": "udp://tracker.publicbt.com:80/scrape",
+            "scrapeState": 3,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": 287487,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078060,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078060,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 235,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079860,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": 4785,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com:80/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com:80/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.0832,
+        "uploadedEver": 25455380,
+        "wanted": [
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1446398558,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1446438682,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 1499198414,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 1477007244,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 2196,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 338,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 14776320,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 1477007244,
+            "length": 1477007244,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.avi"
+          },
+          {
+            "bytesCompleted": 2196,
+            "length": 2196,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.nfo"
+          },
+          {
+            "bytesCompleted": 338,
+            "length": 338,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/Torrent Downloaded From ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 14776320,
+            "length": 14776320,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/sample.avi"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 1477007244,
+            "length": 1477007244,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.avi"
+          },
+          {
+            "bytesCompleted": 2196,
+            "length": 2196,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/400.Days.2015.BRRip.XviD.AC3-EVO.nfo"
+          },
+          {
+            "bytesCompleted": 338,
+            "length": 338,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/Torrent Downloaded From ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 14776320,
+            "length": 14776320,
+            "name": "400.Days.2015.BRRip.XviD.AC3-EVO/sample.avi"
+          }
+        ],
+        "hashString": "c1df23e24dc29b2bfc4775c5f7d33e8bdf31410e",
+        "haveUnchecked": 0,
+        "haveValid": 1491786098,
+        "honorsSessionLimits": true,
+        "id": 2,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:c1df23e24dc29b2bfc4775c5f7d33e8bdf31410e&dn=400.Days.2015.BRRip.XviD.AC3-EVO&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "400.Days.2015.BRRip.XviD.AC3-EVO",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 5691,
+        "pieceSize": 262144,
+        "pieces": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4A==",
+        "priorities": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "queuePosition": 1,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 7162,
+        "secondsSeeding": 4276,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 1491786098,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/400.Days.2015.BRRip.XviD.AC3-EVO.c1df23e24dc29b2b.torrent",
+        "totalSize": 1491786098,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com:80/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 0,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447078190,
+            "scrape": "udp://tracker.publicbt.com:80/scrape",
+            "scrapeState": 1,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 0,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447078230,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": -1,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com:80/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com:80/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.1321,
+        "uploadedEver": 198178501,
+        "wanted": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1446869334,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1446871850,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 968431828,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 964363223,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 128841,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 341,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 964363223,
+            "length": 964363223,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Ant.Man.2015.720p.HDRip.x264.AAC-ETRG.mp4"
+          },
+          {
+            "bytesCompleted": 128841,
+            "length": 128841,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/English.srt"
+          },
+          {
+            "bytesCompleted": 341,
+            "length": 341,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Torrent Downloaded From ExtraTorrent.cc.txt"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 964363223,
+            "length": 964363223,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Ant.Man.2015.720p.HDRip.x264.AAC-ETRG.mp4"
+          },
+          {
+            "bytesCompleted": 128841,
+            "length": 128841,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/English.srt"
+          },
+          {
+            "bytesCompleted": 341,
+            "length": 341,
+            "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG/Torrent Downloaded From ExtraTorrent.cc.txt"
+          }
+        ],
+        "hashString": "41f6353b6bf3ed1d44dd15755a0f6dbd7c91b114",
+        "haveUnchecked": 0,
+        "haveValid": 964492405,
+        "honorsSessionLimits": true,
+        "id": 3,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:41f6353b6bf3ed1d44dd15755a0f6dbd7c91b114&dn=Ant.Man.2015.720p.HDRip.x264.AAC-ETRG&tr=udp%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Ant.Man.2015.720p.HDRip.x264.AAC-ETRG",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 920,
+        "pieceSize": 1048576,
+        "pieces": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==",
+        "priorities": [
+          0,
+          0,
+          0
+        ],
+        "queuePosition": 2,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 2532,
+        "secondsSeeding": 2551,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 964492405,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Ant.Man.2015.720p.HDRip.x264.AAC-ETRG.41f6353b6bf3ed1d.torrent",
+        "totalSize": 964492405,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "Connection failed",
+            "lastScrapeStartTime": 1447078170,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 1447078141,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "scrapeState": 3,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": 323740,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078090,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078090,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 5853,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079890,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": 20253,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.1745,
+        "uploadedEver": 169052432,
+        "wanted": [
+          1,
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1447045876,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1447046783,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 185494821,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 182151418,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 34,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 696,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 182151418,
+            "length": 182151418,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET.mp4"
+          },
+          {
+            "bytesCompleted": 34,
+            "length": 34,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/RARBG.com.txt"
+          },
+          {
+            "bytesCompleted": 696,
+            "length": 696,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/brooklyn.nine-nine.s03e06.hdtv.x264-fleet.nfo"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 182151418,
+            "length": 182151418,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET.mp4"
+          },
+          {
+            "bytesCompleted": 34,
+            "length": 34,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/RARBG.com.txt"
+          },
+          {
+            "bytesCompleted": 696,
+            "length": 696,
+            "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]/brooklyn.nine-nine.s03e06.hdtv.x264-fleet.nfo"
+          }
+        ],
+        "hashString": "ebbad2f49f53d95bc7c04d67a6c143b0637722f2",
+        "haveUnchecked": 0,
+        "haveValid": 182152148,
+        "honorsSessionLimits": true,
+        "id": 4,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:ebbad2f49f53d95bc7c04d67a6c143b0637722f2&dn=Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET%5Brarbg%5D&tr=udp%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg]",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 695,
+        "pieceSize": 262144,
+        "pieces": "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////+",
+        "priorities": [
+          0,
+          0,
+          0
+        ],
+        "queuePosition": 3,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 916,
+        "secondsSeeding": 8,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 182152148,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Brooklyn.Nine-Nine.S03E06.HDTV.x264-FLEET[rarbg].ebbad2f49f53d95b.torrent",
+        "totalSize": 182152148,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "Connection failed",
+            "lastScrapeStartTime": 1447078170,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 1447078141,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "scrapeState": 3,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": 21367,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078160,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078160,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 902,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079960,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": 3680,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.0582,
+        "uploadedEver": 10804103,
+        "wanted": [
+          1,
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1446511059,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 8388608,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1446560977,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 3361060339,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 276002304,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 255602584,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 233402430,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 254598673,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 290628857,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 247169118,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 269921405,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 222112889,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 249415313,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 233551383,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 235469604,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 234233104,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 346613810,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 276002304,
+            "length": 276002304,
+            "name": "Constantine Season 1 Complete/Constantine.S01E01.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 255602584,
+            "length": 255602584,
+            "name": "Constantine Season 1 Complete/Constantine.S01E02.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 233402430,
+            "length": 233402430,
+            "name": "Constantine Season 1 Complete/Constantine.S01E03.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 254598673,
+            "length": 254598673,
+            "name": "Constantine Season 1 Complete/Constantine.S01E04.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 290628857,
+            "length": 290628857,
+            "name": "Constantine Season 1 Complete/Constantine.S01E05.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 247169118,
+            "length": 247169118,
+            "name": "Constantine Season 1 Complete/Constantine.S01E06.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 269921405,
+            "length": 269921405,
+            "name": "Constantine Season 1 Complete/Constantine.S01E07.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 222112889,
+            "length": 222112889,
+            "name": "Constantine Season 1 Complete/Constantine.S01E08.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 249415313,
+            "length": 249415313,
+            "name": "Constantine Season 1 Complete/Constantine.S01E09.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 233551383,
+            "length": 233551383,
+            "name": "Constantine Season 1 Complete/Constantine.S01E10.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 235469604,
+            "length": 235469604,
+            "name": "Constantine Season 1 Complete/Constantine.S01E11.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 234233104,
+            "length": 234233104,
+            "name": "Constantine Season 1 Complete/Constantine.S01E12.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 346613810,
+            "length": 346613810,
+            "name": "Constantine Season 1 Complete/Constantine.S01E13.HDTV.x264-LOL-sync.mp4"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 276002304,
+            "length": 276002304,
+            "name": "Constantine Season 1 Complete/Constantine.S01E01.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 255602584,
+            "length": 255602584,
+            "name": "Constantine Season 1 Complete/Constantine.S01E02.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 233402430,
+            "length": 233402430,
+            "name": "Constantine Season 1 Complete/Constantine.S01E03.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 254598673,
+            "length": 254598673,
+            "name": "Constantine Season 1 Complete/Constantine.S01E04.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 290628857,
+            "length": 290628857,
+            "name": "Constantine Season 1 Complete/Constantine.S01E05.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 247169118,
+            "length": 247169118,
+            "name": "Constantine Season 1 Complete/Constantine.S01E06.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 269921405,
+            "length": 269921405,
+            "name": "Constantine Season 1 Complete/Constantine.S01E07.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 222112889,
+            "length": 222112889,
+            "name": "Constantine Season 1 Complete/Constantine.S01E08.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 249415313,
+            "length": 249415313,
+            "name": "Constantine Season 1 Complete/Constantine.S01E09.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 233551383,
+            "length": 233551383,
+            "name": "Constantine Season 1 Complete/Constantine.S01E10.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 235469604,
+            "length": 235469604,
+            "name": "Constantine Season 1 Complete/Constantine.S01E11.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 234233104,
+            "length": 234233104,
+            "name": "Constantine Season 1 Complete/Constantine.S01E12.HDTV.x264-LOL.mp4"
+          },
+          {
+            "bytesCompleted": 346613810,
+            "length": 346613810,
+            "name": "Constantine Season 1 Complete/Constantine.S01E13.HDTV.x264-LOL-sync.mp4"
+          }
+        ],
+        "hashString": "a6f5dbdf688083993fc066b889f7c7d718a3c4d5",
+        "haveUnchecked": 0,
+        "haveValid": 3348721474,
+        "honorsSessionLimits": true,
+        "id": 5,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:a6f5dbdf688083993fc066b889f7c7d718a3c4d5&dn=Constantine%20Season%201%20Complete&tr=udp%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Constantine Season 1 Complete",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 799,
+        "pieceSize": 4194304,
+        "pieces": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////g==",
+        "priorities": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "queuePosition": 4,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 5801,
+        "secondsSeeding": 25,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 3348721474,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Constantine Season 1 Complete.a6f5dbdf68808399.torrent",
+        "totalSize": 3348721474,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 0,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447078190,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "scrapeState": 1,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": 6709,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078080,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078080,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 184,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079880,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": 388,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.0484,
+        "uploadedEver": 162747570,
+        "wanted": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1447045800,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1447050124,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 305625952,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 168,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 301790332,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 301790332,
+            "length": 301790332,
+            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/agent.x.us.102.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 301790332,
+            "length": 301790332,
+            "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]/agent.x.us.102.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "hashString": "4b5a242d71d844d11fb32b60c2c10cb2bf323565",
+        "haveUnchecked": 0,
+        "haveValid": 301790500,
+        "honorsSessionLimits": true,
+        "id": 6,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:4b5a242d71d844d11fb32b60c2c10cb2bf323565&dn=Agent.X.US.S01E02.HDTV.x264-LOL%5Bettv%5D&tr=udp%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Agent.X.US.S01E02.HDTV.x264-LOL[ettv]",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 144,
+        "pieceSize": 2097152,
+        "pieces": "////////////////////////",
+        "priorities": [
+          0,
+          0
+        ],
+        "queuePosition": 5,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 4345,
+        "secondsSeeding": 988,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 301790500,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Agent.X.US.S01E02.HDTV.x264-LOL[ettv].4b5a242d71d844d1.torrent",
+        "totalSize": 301790500,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078151,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "scrapeState": 3,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 0,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447078230,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": -1,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.8432,
+        "uploadedEver": 257720910,
+        "wanted": [
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1446165962,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1446169416,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 3116375594,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 327800446,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 320537638,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 266077902,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 264237395,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 242728831,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 238859289,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 221501661,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 217395950,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 213682920,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 210159489,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 203311929,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 199787357,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 186315573,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 33901,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 327800446,
+            "length": 327800446,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep10 Thank You For Your ServiceThank You For Your Service.mp4"
+          },
+          {
+            "bytesCompleted": 320537638,
+            "length": 320537638,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep13 Too Much Closure For Comfort.mp4"
+          },
+          {
+            "bytesCompleted": 266077902,
+            "length": 266077902,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep11 Full Release.mp4"
+          },
+          {
+            "bytesCompleted": 264237395,
+            "length": 264237395,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep4 Retarding It All Up.mp4"
+          },
+          {
+            "bytesCompleted": 242728831,
+            "length": 242728831,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep7 Doll Faced.mp4"
+          },
+          {
+            "bytesCompleted": 238859289,
+            "length": 238859289,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep6 A Fluid Thing.mp4"
+          },
+          {
+            "bytesCompleted": 221501661,
+            "length": 221501661,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep2 Cash Poor.mp4"
+          },
+          {
+            "bytesCompleted": 217395950,
+            "length": 217395950,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep3 Behind The Lines.mp4"
+          },
+          {
+            "bytesCompleted": 213682920,
+            "length": 213682920,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep5 Baby Boom.mp4"
+          },
+          {
+            "bytesCompleted": 210159489,
+            "length": 210159489,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep 8 Voiced Over.mp4"
+          },
+          {
+            "bytesCompleted": 203311929,
+            "length": 203311929,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep1 Stalled.mp4"
+          },
+          {
+            "bytesCompleted": 199787357,
+            "length": 199787357,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep12 Found And Lost.mp4"
+          },
+          {
+            "bytesCompleted": 186315573,
+            "length": 186315573,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep9 Sinking Feelings.mp4"
+          },
+          {
+            "bytesCompleted": 33901,
+            "length": 33901,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/66798_310x459.jpg"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 327800446,
+            "length": 327800446,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep10 Thank You For Your ServiceThank You For Your Service.mp4"
+          },
+          {
+            "bytesCompleted": 320537638,
+            "length": 320537638,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep13 Too Much Closure For Comfort.mp4"
+          },
+          {
+            "bytesCompleted": 266077902,
+            "length": 266077902,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep11 Full Release.mp4"
+          },
+          {
+            "bytesCompleted": 264237395,
+            "length": 264237395,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep4 Retarding It All Up.mp4"
+          },
+          {
+            "bytesCompleted": 242728831,
+            "length": 242728831,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep7 Doll Faced.mp4"
+          },
+          {
+            "bytesCompleted": 238859289,
+            "length": 238859289,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep6 A Fluid Thing.mp4"
+          },
+          {
+            "bytesCompleted": 221501661,
+            "length": 221501661,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep2 Cash Poor.mp4"
+          },
+          {
+            "bytesCompleted": 217395950,
+            "length": 217395950,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep3 Behind The Lines.mp4"
+          },
+          {
+            "bytesCompleted": 213682920,
+            "length": 213682920,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep5 Baby Boom.mp4"
+          },
+          {
+            "bytesCompleted": 210159489,
+            "length": 210159489,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep 8 Voiced Over.mp4"
+          },
+          {
+            "bytesCompleted": 203311929,
+            "length": 203311929,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep1 Stalled.mp4"
+          },
+          {
+            "bytesCompleted": 199787357,
+            "length": 199787357,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep12 Found And Lost.mp4"
+          },
+          {
+            "bytesCompleted": 186315573,
+            "length": 186315573,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/Ep9 Sinking Feelings.mp4"
+          },
+          {
+            "bytesCompleted": 33901,
+            "length": 33901,
+            "name": "Con Man Season 1 Web-Dl By Gers1690/66798_310x459.jpg"
+          }
+        ],
+        "hashString": "2556825fd596a1727e8eca7d00b76bd05a864f4e",
+        "haveUnchecked": 0,
+        "haveValid": 3112430281,
+        "honorsSessionLimits": true,
+        "id": 7,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:2556825fd596a1727e8eca7d00b76bd05a864f4e&dn=Con%20Man%20Season%201%20Web-Dl%20By%20Gers1690&tr=udp%3A%2F%2Ftracker.publicbt.com%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Con Man Season 1 Web-Dl By Gers1690",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 743,
+        "pieceSize": 4194304,
+        "pieces": "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+",
+        "priorities": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "queuePosition": 6,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 3481,
+        "secondsSeeding": 220,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 3112430281,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Con Man Season 1 Web-Dl By Gers1690.2556825fd596a172.torrent",
+        "totalSize": 3112430281,
+        "trackerStats": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://tracker.publicbt.com:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "Connection failed",
+            "lastScrapeStartTime": 1447078170,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 1447078141,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "scrapeState": 3,
+            "seederCount": -1,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": -1,
+            "hasAnnounced": false,
+            "hasScraped": false,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 0,
+            "lastScrapeSucceeded": false,
+            "lastScrapeTime": 0,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": -1,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447078230,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": -1,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "udp://tracker.publicbt.com/announce",
+            "id": 0,
+            "scrape": "udp://tracker.publicbt.com/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.0466,
+        "uploadedEver": 145498421,
+        "wanted": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      },
+      {
+        "addedDate": 1446550494,
+        "bandwidthPriority": 0,
+        "comment": "",
+        "corruptEver": 0,
+        "creator": "",
+        "dateCreated": 0,
+        "desiredAvailable": 0,
+        "doneDate": 1446551783,
+        "downloadDir": "/home/ste/Downloads",
+        "downloadLimit": 100,
+        "downloadLimited": false,
+        "downloadedEver": 253951645,
+        "error": 0,
+        "errorString": "",
+        "eta": -1,
+        "etaIdle": -1,
+        "fileStats": [
+          {
+            "bytesCompleted": 168,
+            "priority": 0,
+            "wanted": true
+          },
+          {
+            "bytesCompleted": 251988797,
+            "priority": 0,
+            "wanted": true
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 251988797,
+            "length": 251988797,
+            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/gotham.207.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "files": [
+          {
+            "bytesCompleted": 168,
+            "length": 168,
+            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/Torrent-Downloaded-from-ExtraTorrent.cc.txt"
+          },
+          {
+            "bytesCompleted": 251988797,
+            "length": 251988797,
+            "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]/gotham.207.hdtv-lol[ettv].mp4"
+          }
+        ],
+        "hashString": "92be2daa2e89c2b23113aae5c32fe381a0266041",
+        "haveUnchecked": 0,
+        "haveValid": 251988965,
+        "honorsSessionLimits": true,
+        "id": 8,
+        "isFinished": false,
+        "isPrivate": false,
+        "isStalled": false,
+        "leftUntilDone": 0,
+        "magnetLink": "magnet:?xt=urn:btih:92be2daa2e89c2b23113aae5c32fe381a0266041&dn=Gotham.S02E07.HDTV.x264-LOL%5Bettv%5D&tr=http%3A%2F%2Fretracker.krs-ix.ru%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337",
+        "manualAnnounceTime": -1,
+        "maxConnectedPeers": 50,
+        "metadataPercentComplete": 1,
+        "name": "Gotham.S02E07.HDTV.x264-LOL[ettv]",
+        "peers": [],
+        "peersConnected": 0,
+        "peersFrom": {
+          "fromCache": 0,
+          "fromDht": 0,
+          "fromIncoming": 0,
+          "fromLpd": 0,
+          "fromLtep": 0,
+          "fromPex": 0,
+          "fromTracker": 0
+        },
+        "peersGettingFromUs": 0,
+        "peersSendingToUs": 0,
+        "percentDone": 1,
+        "pieceCount": 121,
+        "pieceSize": 2097152,
+        "pieces": "////////////////////gA==",
+        "priorities": [
+          0,
+          0
+        ],
+        "queuePosition": 7,
+        "rateDownload": 0,
+        "rateUpload": 0,
+        "recheckProgress": 0,
+        "secondsDownloading": 1273,
+        "secondsSeeding": 45,
+        "seedIdleLimit": 30,
+        "seedIdleMode": 0,
+        "seedRatioLimit": 2,
+        "seedRatioMode": 0,
+        "sizeWhenDone": 251988965,
+        "startDate": 0,
+        "status": 0,
+        "torrentFile": "/home/ste/.config/transmission/torrents/Gotham.S02E07.HDTV.x264-LOL[ettv].92be2daa2e89c2b2.torrent",
+        "totalSize": 251988965,
+        "trackerStats": [
+          {
+            "announce": "http://retracker.krs-ix.ru/announce",
+            "announceState": 0,
+            "downloadCount": 131447,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "http://retracker.krs-ix.ru:80",
+            "id": 0,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078080,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078081,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 209,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079890,
+            "scrape": "http://retracker.krs-ix.ru/scrape",
+            "scrapeState": 1,
+            "seederCount": 3978,
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "announceState": 0,
+            "downloadCount": 225719,
+            "hasAnnounced": false,
+            "hasScraped": true,
+            "host": "udp://open.demonii.com:1337",
+            "id": 1,
+            "isBackup": false,
+            "lastAnnouncePeerCount": 0,
+            "lastAnnounceResult": "",
+            "lastAnnounceStartTime": 0,
+            "lastAnnounceSucceeded": false,
+            "lastAnnounceTime": 0,
+            "lastAnnounceTimedOut": false,
+            "lastScrapeResult": "",
+            "lastScrapeStartTime": 1447078151,
+            "lastScrapeSucceeded": true,
+            "lastScrapeTime": 1447078151,
+            "lastScrapeTimedOut": 0,
+            "leecherCount": 406,
+            "nextAnnounceTime": 0,
+            "nextScrapeTime": 1447079960,
+            "scrape": "udp://open.demonii.com:1337",
+            "scrapeState": 1,
+            "seederCount": 7391,
+            "tier": 1
+          }
+        ],
+        "trackers": [
+          {
+            "announce": "http://retracker.krs-ix.ru/announce",
+            "id": 0,
+            "scrape": "http://retracker.krs-ix.ru/scrape",
+            "tier": 0
+          },
+          {
+            "announce": "udp://open.demonii.com:1337",
+            "id": 1,
+            "scrape": "udp://open.demonii.com:1337",
+            "tier": 1
+          }
+        ],
+        "uploadLimit": 100,
+        "uploadLimited": false,
+        "uploadRatio": 0.0655,
+        "uploadedEver": 16651442,
+        "wanted": [
+          1,
+          1
+        ],
+        "webseeds": [],
+        "webseedsSendingToUs": 0
+      }
+    ]
+  },
+  "result": "success"
+}

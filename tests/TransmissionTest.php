@@ -29,6 +29,12 @@ class TransmissionTest extends \PHPUnit_Framework_TestCase
         $this->transmission->torrentGet();
     }
 
+    function testFail()
+    {
+        $this->setExpectedException('GuzzleHttp\Exception\ConnectException','cURL error 7: Failed to connect to localhost port 9091: Connection refused (see http://curl.haxx.se/libcurl/c/libcurl-errors.html');
+        $this->transmission->allGetFields();
+    }
+
     /**
      * @param array $ids
      *
