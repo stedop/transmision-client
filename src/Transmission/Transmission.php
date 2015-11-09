@@ -8,6 +8,16 @@ use Transmission\Clients\ClientAbstract;
 /**
  * Class Transmission
  * @package Playground\Transmission
+ *
+ * A wrapper for making calls to Transmission
+ * For more information on the Transmission RPC https://trac.transmissionbt.com/browser/trunk/extras/rpc-spec.txt
+ *
+ * @method string torrentStart(array $ids) Start a torrent when next available
+ * @method string torrentStartNow(array $ids) Start now
+ * @method string torrentStop(array $ids) Stop a torrent
+ * @method string torrentVerify(array $ids) Verify a torrent
+ * @method string torrentReannounce(array $ids) Get more peers
+ *
  */
 class Transmission
 {
@@ -51,6 +61,13 @@ class Transmission
         'uploadRatio', 'wanted', 'webseeds', 'webseedsSendingToUs'
     ];
 
+    protected $allowedActions = [
+        "torrentStart" => "torrent-start",              // tr_torrentStart
+        "torrentStartNow" => "torrent-start-now",       // tr_torrentStartNow
+        "torrentStop" => "torrent-stop",                // tr_torrentStop
+        "torrentVerify" => "torrent-verify",            // tr_torrentVerify
+        "torrentReannounce" => "torrent-reannounce"     // tr_torrentManualUpdate ("ask tracker for more peers")
+    ];
 
     /**
      * Used for the torent-set command
@@ -87,50 +104,6 @@ class Transmission
     ];
 
     /**
-     * Used for "torrent-add" command
-     *
-     * Either "filename" OR "metainfo" MUST be included.
-     * All other arguments are optional.
-     *
-     * @var array
-     */
-    public static $addFields = [
-        "cookies" => '',            // string      pointer to a string of one or more cookies.
-        "download-dir" => '',       // string      path to download the torrent to
-        "filename" => '',           // string      filename or URL of the .torrent file
-        "metainfo" => '',           // string      base64-encoded .torrent content
-        "paused" => false,          // boolean     if true, don't start the torrent
-        "peer-limit" => 0,          // number      maximum number of peers
-        "bandwidthPriority" => 1,   // number      torrent's bandwidth tr_priority_t
-        "files-wanted" => [],       // array       indices of file(s) to download
-        "files-unwanted" => [],     // array       indices of file(s) to not download
-        "priority-high",            // array       indices of high-priority file(s)
-        "priority-low",             // array       indices of low-priority file(s)
-        "priority-normal",          // array       indices of normal-priority file(s)
-    ];
-
-    /**
-     * Used in "torrent-delete"
-     *
-     * @var array
-     */
-    public static $deleteFields = [
-        "ids" => [],                  // array      torrent list of ids
-        "delete-local-data" => false, // boolean    delete local data. (default: false)
-    ];
-
-    /**
-     * @var array
-     */
-    public static $moveFields = [
-        "ids" => [],             // array      torrent list
-        "location" => '',        // string     the new torrent location
-        "move" => false,         // boolean    if true, move from previous location.
-                                 //            otherwise, search "location" for files
-                                 //            (default: false)
-    ];
-
-    /**
      * @var array
      */
     public static $renameFields = [
@@ -145,38 +118,39 @@ class Transmission
         $this->client = $client;
     }
 
-    function torrentStart($ids = [])
+    /**
+     * Runs one of the basic actions
+     *
+     * @param $action
+     * @param array $ids
+     */
+    public function torrentAction($action, array $ids)
     {
-    }
+        $payload = [
+            "method" => $action,
+            "arguments" => []
+        ];
 
-    function torrentStartNow($ids = [])
-    {
-    }
+        $payload["arguments"]["ids"] = $ids;
 
-    function torrentStop($ids = [])
-    {
-    }
-
-    function torrentVerify($ids = [])
-    {
-    }
-
-    function torrentReannounce($ids = [])
-    {
+        $this->client->request($payload);
     }
 
     function torrentSet($parameters = [])
     {
+        //todo: implement torrentSet
     }
 
     /**
+     * Gets torrents based on id, if no id is set then returns all torrents
+     *
      * @param bool|false $allFields
      * @param array $ids
      * @param array $chosenFields
      *
      * @return mixed
      */
-    function torrentGet($allFields = false, array $ids = [], array $chosenFields = [])
+    public function torrentGet($allFields = false, array $ids = [], array $chosenFields = [])
     {
         $payload = [
             "method" => "torrent-get",
@@ -194,22 +168,6 @@ class Transmission
         return $this->client->request($payload);
     }
 
-    function torrentAdd()
-    {
-    }
-
-    function torrentRemove()
-    {
-    }
-
-    function torrentSetLocation()
-    {
-    }
-
-    function torrentRenamePath()
-    {
-    }
-
     /**
      * Returns the complete lists of fields for the get command
      *
@@ -218,5 +176,66 @@ class Transmission
     public static function allGetFields()
     {
         return array_merge(Transmission::$basicGetFields, Transmission::$extraGetFields);
+    }
+
+    /**
+     * Adds a torrent to transmission
+     * Requires EITHER a base64 encoded magnet link or a location to a .torrent file which can be local or URL
+     *
+     * @param null $metaInfo
+     * @param null $torrentFile
+     * @param array $params
+     *
+     * @return mixed
+     *
+     * @throws TransmissionException
+     */
+    function torrentAdd($metaInfo = null, $torrentFile = null, $params = [])
+    {
+        if (!is_null($metaInfo))
+            $params['metainfo'] = $metaInfo;
+        else if (!is_null($torrentFile))
+            $params['filename'] = $torrentFile;
+        else
+            throw new TransmissionException("A magnet link or .torrent file location is required");
+
+        $payload = [
+            "method" => 'torrent-add',
+            "arguments" => $params
+        ];
+
+        return $this->client->request($payload);
+    }
+
+    function torrentRemove(array $ids = [], $deleteLocal = false)
+    {
+        $payload = [
+            "method" => "torrent-remove",
+            "arguments" => [
+                "ids" => $ids,
+                "delete-local-data" => $deleteLocal
+            ]
+        ];
+
+        return $this->client->request($payload);
+    }
+
+    function torrentSetLocation()
+    {
+        //todo implement torrentSetLocation()
+    }
+
+    function torrentRenamePath()
+    {
+        //todo implement torrentRenamePath
+    }
+
+    public function __call($name, $arguments)
+    {
+        if (array_key_exists($name, $this->allowedActions)) {
+            $this->torrentAction($this->allowedActions[$name], $arguments);
+        } else {
+            throw new TransmissionException("Not an allowed action");
+        }
     }
 }
