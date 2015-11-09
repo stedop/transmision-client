@@ -97,6 +97,14 @@ class Transmission
         return $this->client->request($payload);
     }
 
+    /**
+     * Mutate the torrent, see the rpc documentation
+     *
+     * @param array $ids
+     * @param array $parameters
+     *
+     * @return mixed
+     */
     function torrentSet(array $ids, array $parameters = [])
     {
         $payload = [
@@ -176,6 +184,14 @@ class Transmission
         return $this->client->request($payload);
     }
 
+    /**
+     * Will remove the torrent if deleteLocal is true then the file will be deleted also
+     *
+     * @param array $ids
+     * @param bool|false $deleteLocal
+     *
+     * @return mixed
+     */
     function torrentRemove(array $ids = [], $deleteLocal = false)
     {
         $payload = [
