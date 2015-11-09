@@ -10,13 +10,31 @@ namespace Transmission\Clients;
 class HttpRequestClient extends ClientAbstract
 {
     /**
-     * @param $method
-     * @param array $params
-     * @return mixed
+     * @var \HttpRequestPool
      */
-    public function request($method, array $params)
+    protected $client;
+
+
+    /**
+     * @param $host
+     */
+    public function __construct(
+        $host = ""
+    )
     {
-        // TODO: Implement request() method.
+        if ($host != "")
+            $this->setTransmissionURL($host);
+
+        $this->setVendorClient(new \HttpRequestPool());
     }
+
+    public function request(array $params)
+    {
+        $request = new \HttpRequest($this->getTransmissionURL(), "POST");
+        $request->addBody(json_encode($params));
+        $this->client->attach($request);
+        return $this->client->send();
+    }
+
 
 }
